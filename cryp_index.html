@@ -1,0 +1,82 @@
+<!DOCTYPE html><!--Define el uso de HTML 5-->
+<html lang="es"><!--El atributo HTML lang se utiliza para determinar el idioma del texto utilizado en cualquier página web.-->
+
+<!--Provee informacion general (metadatos) acerca del documento, incluyendo titulos y enlaces a scripts y hojas de estilo-->
+<head>
+    <meta charset="UTF-8"><!--Compatibilidad para acentos y caracteres especiales-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--Investigar-->
+    <meta name="viewport" content="user-scalable=no, height=device-height, width=device-width, initial-scale=1.0"><!--Meta para moviles-->
+    <!--<link rel="website icon" href="">-->
+    <link rel="website icon" href="images/Logo.svg"><!--Agrega Icono Alura en la pestaña del avegador-->
+    <link rel="stylesheet" href="sources/reset.css"><!--CSS para quitar valores por defecto del navegador-->
+    <link rel="stylesheet" href="sources/cryp_index_sty.css"><!--CSS de estilos para la pagina-->
+    <title>Encriprador - Alura</title><!--titulo de pagina web-->
+</head>
+
+<!--Cuerpo de la Pagina WEB-->
+<body>
+    <!--header: lo ajuste tipo GRID de 2 columnas-->
+    <header>
+        <!--img src="" class="logo3" alt="Logo">-->
+        <img src="images/Logo.svg" alt="Logo" class="logo1"><!--Agregar Logo Alura/fenoxs-->
+        <!--<button class="switch" id="switch">
+            <span class="">Enigma</span> logo alura-->
+            <!--logo enigma
+        </button>-->
+    </header>
+    <!--main: lo ajuste tipo flex-->
+    <main>
+        <!--Contenedor de cuadros para codigo enigma-->
+        <!--<form class="enigma">
+            <label>CODE 1</label>
+            <input type="number" name="code1" min="0"
+            max="26" placeholder="0"></input>
+            <label>CODE 2</label>
+            <input type="number" name="code2" min="0"
+            max="26" placeholder="0"></input>
+            <label>CODE 3</label>
+            <input type="number" name="code3" min="0"
+            max="26" placeholder="0"></input>
+            <label>CODE 4</label>
+            <input type="number" name="code4" min="0"
+            max="26" placeholder="0"></input>
+        </form>-->
+        <!--Bloque de funcion principal-->
+        <div class="main2">
+            <!--Contenedor de botones encriptar, desencriptar y textarea-->
+            <section class="cuadro1">
+                <textarea class="text-area" name="mensaje" required placeholder="Ingrese texto"></textarea>
+                <!--class: define una clase para la etiqueta--> 
+                <!--required: define que llenar el campo es obligatorio-->
+                <!--placeholder: deja un texto de apoyo para guiar al usuario-->
+                <p class="regla">Solo letras minusculas y sin acentos.</p>
+                    <!--tipo bloque por defecto-->
+                <!--texto regla para no usar minusculas ni acentos-->
+                <!--bloque para los botones de encriptacion, lo ajuste tipo: Flex-->
+                <div class="botones">
+                    <button class="encryp">Encriptar</button>
+                    <button class="desencryp">Desencriptar</button>
+                </div>
+            </section>
+            <!--Contenedor de boton copy y textarea para imprimir el mensaje encriptado o desencriptado; tipo block por defecto.-->
+            <section class="cuadro2">
+                <textarea class="mensaje" readonly></textarea>
+                <!--readonly: define que el text area no puede ser modificado es solo para lectura-->
+                <button class="copy">Copiar</button>
+                <!--div para boton de copiar, tipo block defecto-->
+            </section>
+        </div>
+
+    </main>
+    <!--Pie de pagina, tipo block por defecto-->
+    <footer>
+        <!--img src="" class="logo3" alt="Logo">-->
+        <img src="images/Logo2.png" alt="Logo" class="logo2"><!--Logo para pagina-->
+        <p>&copy Challenger - Alura 2023. Elaborado por Antony Duarte</p><!--Parrafo-->
+    </footer>
+    <!--Archivo JavaScript para funcionalidades e interacciones de la pagina con el usuario-->
+    <script src="sources/cryp_index.js"></script>
+
+</body>
+<!--Cierre-->
+</html>
